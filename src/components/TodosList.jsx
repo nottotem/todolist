@@ -26,13 +26,14 @@ function TodosList({ todos, setTodos, setEditTodo }) {
       {todos.map((todo) => (
         <span
           key={todo.id}
-          className="flex flex-row w-full h-12 rounded-md border border-slate-600 pl-4 mb-2 bg-gradient-to-b from-slate-600 to-slate-700 shadow shadow-slate-900 font-mono"
+          className="flex flex-row w-full h-12 rounded-md border border-neutral-400 pl-4 mb-2 bg-transparent hover:bg-neutral-800 font-mono"
+          // className="flex flex-row w-full h-12 rounded-md border border-neutral-600 pl-4 mb-2 bg-gradient-to-b from-neutral-600 to-neutral-700 shadow shadow-neutral-800 font-mono"
         >
           <input
             type="text"
             value={todo.title}
             onChange={(event) => event.preventDefault()}
-            className="w-3/4 text-slate-100 font-medium bg-transparent outline-none"
+            className="w-3/4 text-slate-300 font-medium bg-transparent outline-none"
           />
           <div className="flex items-center justify-center w-1/4 gap-4">
             {/* Botón para marcar una tarea como completada */}
@@ -45,7 +46,7 @@ function TodosList({ todos, setTodos, setEditTodo }) {
             </button> */}
             <button
               onClick={() => handleEdit(todo)}
-              className="text-yellow-400"
+              className="text-yellow-200"
             >
               <i className="fa fa-edit"></i>
             </button>
