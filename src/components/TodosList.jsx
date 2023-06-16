@@ -25,20 +25,18 @@ function TodosList({ todos, setTodos, setEditTodo }) {
         <span
           key={todo.id}
           className="flex flex-row w-full h-12 rounded-md border border-neutral-600 pl-4 mb-2 bg-transparent hover:bg-neutral-800 font-mono"
-          // className="flex flex-row w-full h-12 rounded-md border border-neutral-600 pl-4 mb-2 bg-gradient-to-b from-neutral-600 to-neutral-700 shadow shadow-neutral-800 font-mono"
         >
           <input
             type="text"
             value={todo.title}
             onChange={(event) => event.preventDefault()}
-            className={`w-3/4 text-slate-300 font-medium bg-transparent outline-none ${
-              todo.completed ? "text-cyan-600 line-through" : ""
+            className={`w-3/4 font-medium bg-transparent outline-none ${
+              todo.completed ? "text-cyan-600 line-through" : "text-slate-300"
             }`}
           />
           <div className="flex items-center justify-center w-1/4 gap-4">
             <button
               onClick={() => handleComplete(todo)}
-              // className="text-slate-300"
               className={`${
                 todo.completed ? "text-cyan-600" : "text-slate-300"
               }`}
