@@ -46,11 +46,14 @@ function TodosList({ todos, setTodos, setEditTodo }) {
             </button> */}
             <button
               onClick={() => handleEdit(todo)}
-              className="text-yellow-200"
+              className="text-yellow-300"
             >
               <i className="fa fa-edit"></i>
             </button>
-            <button onClick={() => handleDelete(todo)} className="text-red-400">
+            <button
+              onClick={() => handleDelete(todo)}
+              className="text-neutral-400"
+            >
               <i className="fa fa-trash"></i>
             </button>
           </div>
