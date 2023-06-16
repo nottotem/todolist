@@ -32,7 +32,7 @@ function TodosList({ todos, setTodos, setEditTodo }) {
             value={todo.title}
             onChange={(event) => event.preventDefault()}
             className={`w-3/4 text-slate-300 font-medium bg-transparent outline-none ${
-              todo.completed ? "text-slate-500 line-through" : ""
+              todo.completed ? "text-cyan-600 line-through" : ""
             }`}
           />
           <div className="flex items-center justify-center w-1/4 gap-4">
@@ -40,7 +40,7 @@ function TodosList({ todos, setTodos, setEditTodo }) {
               onClick={() => handleComplete(todo)}
               // className="text-slate-300"
               className={`${
-                todo.completed ? "text-cyan-400" : "text-slate-300"
+                todo.completed ? "text-cyan-600" : "text-slate-300"
               }`}
             >
               <i className="fa fa-check-circle"></i>

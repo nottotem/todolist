@@ -43,11 +43,11 @@ function Form({ input, setInput, todos, setTodos, editTodo, setEditTodo }) {
         value={input}
         required
         onChange={onInputChange}
-        className="w-3/4 h-12 rounded-l-md pl-4 outline-none text-neutral-900 bg-neutral-400 placeholder-neutral-600"
+        className="w-3/4 h-12 rounded-l-md pl-4 outline-none text-neutral-900 bg-neutral-300 placeholder-neutral-500"
       />
       <button
         type="submit"
-        className="w-1/4 h-12 rounded-r-md bg-cyan-900 text-slate-100 font-medium"
+        className="w-1/4 h-12 rounded-r-md bg-cyan-600 text-slate-100 font-medium"
       >
         {editTodo ? "Update" : "Add"}
       </button>
