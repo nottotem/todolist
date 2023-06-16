@@ -43,7 +43,7 @@ function Form({ input, setInput, todos, setTodos, editTodo, setEditTodo }) {
         value={input}
         required
         onChange={onInputChange}
-        className="w-3/4 h-12 rounded-l-md pl-4 outline-none text-slate-200 bg-neutral-400 placeholder-neutral-600"
+        className="w-3/4 h-12 rounded-l-md pl-4 outline-none text-neutral-900 bg-neutral-400 placeholder-neutral-600"
       />
       <button
         type="submit"

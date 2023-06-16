@@ -38,16 +38,19 @@ function TodosList({ todos, setTodos, setEditTodo }) {
           <div className="flex items-center justify-center w-1/4 gap-4">
             <button
               onClick={() => handleComplete(todo)}
-              className="text-sky-400"
+              // className="text-slate-300"
+              className={`${
+                todo.completed ? "text-cyan-400" : "text-slate-300"
+              }`}
             >
               <i className="fa fa-check-circle"></i>
             </button>
-            <button onClick={() => handleEdit(todo)} className="text-slate-200">
+            <button onClick={() => handleEdit(todo)} className="text-slate-300">
               <i className="fa fa-edit"></i>
             </button>
             <button
               onClick={() => handleDelete(todo)}
-              className="text-green-500"
+              className="text-slate-300"
             >
               <i className="fa fa-trash"></i>
             </button>
