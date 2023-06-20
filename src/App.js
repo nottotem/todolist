@@ -14,7 +14,7 @@ function App() {
   }, [todos]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen w-full gap-8 bg-neutral-900 py-14">
+    <div className="flex flex-col items-center min-h-screen w-full gap-8 bg-neutral-950 py-14">
       <Header />
       <Form
         input={input}

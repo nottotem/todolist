@@ -47,7 +47,7 @@ function Form({ input, setInput, todos, setTodos, editTodo, setEditTodo }) {
       />
       <button
         type="submit"
-        className="w-1/4 h-12 rounded-r-md bg-cyan-600 text-slate-100 font-medium"
+        className="w-1/4 h-12 rounded-r-md bg-gradient-to-b from-cyan-500 to-cyan-700 text-slate-100 font-medium"
       >
         {editTodo ? "Update" : "Add"}
       </button>
