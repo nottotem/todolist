@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import TodosList from "./components/TodosList";
+import TasksText from "./components/TasksText";
 
 function App() {
   const initialState = JSON.parse(localStorage.getItem("todos")) || [];
@@ -24,6 +25,7 @@ function App() {
         editTodo={editTodo}
         setEditTodo={setEditTodo}
       />
+      <TasksText />
       <TodosList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
     </div>
   );
