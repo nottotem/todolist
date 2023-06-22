@@ -31,11 +31,14 @@ function TodosList({ todos, setTodos, setEditTodo }) {
             value={todo.title}
             onChange={(event) => event.preventDefault()}
             className={`w-3/4 font-medium bg-transparent outline-none ${
-              todo.completed ? "text-cyan-600 line-through" : "text-slate-300"
+              todo.completed
+                ? "text-neutral-600 line-through"
+                : "text-slate-300"
             }`}
           />
           <div className="flex items-center justify-center w-1/4 gap-4">
             <button
+              title="Complete Task"
               onClick={() => handleComplete(todo)}
               className={`${
                 todo.completed ? "text-cyan-600" : "text-slate-300"
@@ -43,10 +46,15 @@ function TodosList({ todos, setTodos, setEditTodo }) {
             >
               <i className="fa fa-check-circle"></i>
             </button>
-            <button onClick={() => handleEdit(todo)} className="text-slate-300">
+            <button
+              title="Edit Task"
+              onClick={() => handleEdit(todo)}
+              className="text-slate-300"
+            >
               <i className="fa fa-edit"></i>
             </button>
             <button
+              title="Delete Task"
               onClick={() => handleDelete(todo)}
               className="text-slate-300"
             >
