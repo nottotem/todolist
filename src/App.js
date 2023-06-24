@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import TodosList from "./components/TodosList";
@@ -15,7 +16,8 @@ function App() {
   }, [todos]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen w-full gap-8 bg-neutral-950 py-14">
+    <div className="flex flex-col items-center min-h-screen w-full gap-4 bg-neutral-950 pb-14">
+      <Navbar />
       <Header />
       <Form
         input={input}
