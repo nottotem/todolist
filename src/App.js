@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Form from "./components/Form";
 import TodosList from "./components/TodosList";
 import TasksText from "./components/TasksText";
+import PendingTasks from "./components/PendingTasks";
 
 function App() {
   const initialState = JSON.parse(localStorage.getItem("todos")) || [];
@@ -28,7 +29,8 @@ function App() {
           editTodo={editTodo}
           setEditTodo={setEditTodo}
         />
-        <TasksText />
+        <TasksText todos={todos} setTodos={setTodos} />
+        <PendingTasks todos={todos} />
         <TodosList
           todos={todos}
           setTodos={setTodos}
