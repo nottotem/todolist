@@ -18,8 +18,14 @@ function Form({ input, setInput, todos, setTodos, editTodo, setEditTodo }) {
     }
   }, [setInput, editTodo]);
 
+  // const onInputChange = (event) => {
+  //   setInput(event.target.value);
+  // };
+
   const onInputChange = (event) => {
-    setInput(event.target.value);
+    const capitalizedInput =
+      event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
+    setInput(capitalizedInput);
   };
 
   const onFormSubmit = (event) => {

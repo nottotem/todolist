@@ -1,4 +1,6 @@
-import ClearAllButton from "./ClearAllButton";
+import ClearAllDoneButton from "./ClearAllDoneButton";
+import ClearAllTaskButton from "./ClearAllTaskButton";
+
 import { HiChevronDoubleRight } from "react-icons/hi";
 
 function TasksText({ todos, setTodos }) {
@@ -19,8 +21,13 @@ function TasksText({ todos, setTodos }) {
           </p>
         </div>
       </div>
-      <div className="flex items-center w-1/2 h-full">
-        <ClearAllButton todos={todos} setTodos={setTodos} />
+      <div className="flex flex-row items-center justify-end w-1/2 h-full gap-2">
+        <div className="flex items-center justify-center h-full w-2/5">
+          <ClearAllDoneButton todos={todos} setTodos={setTodos} />
+        </div>
+        <div className="flex items-center justify-center h-full w-2/5">
+          <ClearAllTaskButton todos={todos} setTodos={setTodos} />
+        </div>
       </div>
     </div>
   );
