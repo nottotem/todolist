@@ -24,7 +24,7 @@ function TodosList({ todos, setTodos, setEditTodo }) {
       {todos.map((todo) => (
         <span
           key={todo.id}
-          className="flex flex-row w-full h-12 rounded-md border border-neutral-600 hover:border-neutral-400 pl-4 mb-2 bg-transparent hover:bg-neutral-900 font-mono"
+          className="flex flex-row w-full h-14 border-b  border-neutral-600 pl-4 bg-transparent hover:bg-neutral-900 font-mono"
         >
           <input
             type="text"
@@ -41,7 +41,7 @@ function TodosList({ todos, setTodos, setEditTodo }) {
               title="Complete"
               onClick={() => handleComplete(todo)}
               className={`${
-                todo.completed ? "text-cyan-600" : "text-slate-300"
+                todo.completed ? "text-cyan-600" : "text-neutral-400"
               }`}
             >
               <i className="fa fa-check-circle"></i>
@@ -49,14 +49,14 @@ function TodosList({ todos, setTodos, setEditTodo }) {
             <button
               title="Edit"
               onClick={() => handleEdit(todo)}
-              className="text-slate-300"
+              className="text-neutral-400"
             >
               <i className="fa fa-edit"></i>
             </button>
             <button
               title="Delete"
               onClick={() => handleDelete(todo)}
-              className="text-slate-300"
+              className="text-neutral-400"
             >
               <i className="fa fa-trash"></i>
             </button>

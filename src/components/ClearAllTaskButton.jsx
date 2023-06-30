@@ -21,10 +21,10 @@ function ClearAllTaskButton({ todos, setTodos }) {
     <div className="flex items-center w-full h-full">
       <button
         onClick={handleDelete}
-        className="flex flex-row items-center justify-center gap-2 w-full h-12 rounded-md bg-gradient-to-b from-red-600 to-red-900 text-slate-100 font-medium"
+        className="flex flex-row items-center justify-center gap-2 w-full h-10 rounded-full bg-red-900 hover:bg-red-800 text-slate-100 font-medium opacity-100"
       >
-        <i className="fa fa-trash"></i>
-        <p className="text-sm">All</p>
+        <i className="fa fa-trash text-slate-300"></i>
+        <p className="text-sm text-slate-300">All</p>
       </button>
       {showModal && (
         <Modal onConfirm={handleConfirmDelete} onCancel={handleCancelDelete}>

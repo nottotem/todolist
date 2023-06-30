@@ -1,15 +1,11 @@
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
-// import { RiUserSmileFill } from "react-icons/ri";
 
 function Navbar() {
   return (
     <div className="fixed flex flex-row items-center justify-end w-full h-20 border-b border-neutral-900 gap-4 px-16 bg-neutral-950">
       <div className="flex flex-row items-center h-full w-full gap-2">
-        {/* <p className="font-mono text-xl text-transparent bg-clip-text bg-gradient-to-b from-cyan-300 to-cyan-600 font-semibold select-none">
-          nottotem, inc.
-        </p> */}
         <p className="font-mono text-xl text-neutral-500 font-semibold select-none">
           nottotem, inc.
         </p>
