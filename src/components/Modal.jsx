@@ -2,7 +2,7 @@ import React from "react";
 
 function Modal({ onConfirm, onCancel, children }) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-neutral-800 bg-opacity-80">
+    <div className="fixed inset-0 flex items-center justify-center bg-neutral-950 bg-opacity-90">
       <div className="bg-slate-300 p-6 rounded-lg">
         <p className="mb-4">{children}</p>
         <div className="flex justify-end">

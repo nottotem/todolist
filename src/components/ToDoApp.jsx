@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import Form from "./Form";
 import TasksText from "./TasksText";
-// import PendingTasks from "./components/PendingTasks";
+import PendingTasks from "./PendingTasks";
 import TodosList from "./TodosList";
 
 function ToDoApp() {
@@ -27,7 +27,7 @@ function ToDoApp() {
         setEditTodo={setEditTodo}
       />
       <TasksText todos={todos} setTodos={setTodos} />
-      {/* <PendingTasks todos={todos} /> */}
+      <PendingTasks todos={todos} />
       <TodosList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
     </div>
   );

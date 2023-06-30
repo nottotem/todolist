@@ -24,7 +24,7 @@ function TodosList({ todos, setTodos, setEditTodo }) {
       {todos.map((todo) => (
         <span
           key={todo.id}
-          className="flex flex-row w-full h-14 border-b  border-neutral-600 pl-4 bg-transparent hover:bg-neutral-900 font-mono"
+          className="flex flex-row w-full h-14 border-b border-neutral-600 pl-4 bg-transparent hover:bg-neutral-900 font-mono"
         >
           <input
             type="text"
