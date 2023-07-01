@@ -6,7 +6,7 @@ import { HiChevronDoubleRight } from "react-icons/hi";
 function TasksText({ todos, setTodos }) {
   console.log(todos);
   return (
-    <div className="flex flex-row justify-center items-center w-1/3 h-12">
+    <div className="flex flex-row justify-center items-center w-full h-12">
       <div className="flex flex-col justify-center w-1/2 h-full">
         <div className="flex flex-row gap-2 items-center">
           <HiChevronDoubleRight className="text-slate-300" />

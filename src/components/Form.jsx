@@ -37,7 +37,7 @@ function Form({ input, setInput, todos, setTodos, editTodo, setEditTodo }) {
   return (
     <form
       onSubmit={onFormSubmit}
-      className="flex flex-row items-center justify-center w-1/3"
+      className="flex flex-row items-center justify-center w-full"
     >
       <input
         type="text"

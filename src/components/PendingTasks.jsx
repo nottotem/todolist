@@ -27,7 +27,7 @@ function PendingTasks({ todos }) {
   }
 
   return (
-    <div className="flex flex-row justify-center items-center w-1/3 h-10 gap-2">
+    <div className="flex flex-row justify-center items-center w-full h-10 gap-2">
       <p className="font-mono text-sm text-transparent bg-clip-text bg-gradient-to-b from-slate-200 to-slate-400 font-bold select-none">
         {message}
       </p>

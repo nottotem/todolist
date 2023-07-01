@@ -20,7 +20,7 @@ function TodosList({ todos, setTodos, setEditTodo }) {
   };
 
   return (
-    <div className="w-1/3">
+    <div className="w-full">
       {todos.map((todo) => (
         <span
           key={todo.id}

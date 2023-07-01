@@ -16,19 +16,25 @@ function ToDoApp() {
   }, [todos]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-4">
-      <Header />
-      <Form
-        input={input}
-        setInput={setInput}
-        todos={todos}
-        setTodos={setTodos}
-        editTodo={editTodo}
-        setEditTodo={setEditTodo}
-      />
-      <TasksText todos={todos} setTodos={setTodos} />
-      <PendingTasks todos={todos} />
-      <TodosList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
+    <div className="flex flex-col items-center justify-center w-full">
+      <div className="flex flex-col items-center justify-center w-auto gap-4">
+        <Header />
+        <Form
+          input={input}
+          setInput={setInput}
+          todos={todos}
+          setTodos={setTodos}
+          editTodo={editTodo}
+          setEditTodo={setEditTodo}
+        />
+        <TasksText todos={todos} setTodos={setTodos} />
+        <PendingTasks todos={todos} />
+        <TodosList
+          todos={todos}
+          setTodos={setTodos}
+          setEditTodo={setEditTodo}
+        />
+      </div>
     </div>
   );
 }
